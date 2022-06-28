@@ -1,5 +1,12 @@
 import React from "react";
+import { Container } from "./styles";
 
 export const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <Container>
+        <h1>Home</h1>
+      </Container>
+    </>
+  );
 };

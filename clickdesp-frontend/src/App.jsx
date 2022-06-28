@@ -1,12 +1,15 @@
 import React from "react";
-import GlobalStyles from "./GlobalStyles/GlobalStyles";
 
-export const App = () => {
+import GlobalStyles from "./GlobalStyles/GlobalStyles";
+import { BrowserRouter } from "react-router-dom";
+import { AppRouters } from "./routes/App.routes";
+
+const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <GlobalStyles />
-      <h1>Meu App</h1>
-    </>
+      <AppRouters />
+    </BrowserRouter>
   );
 };
 
